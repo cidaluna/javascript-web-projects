@@ -1,0 +1,99 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: aquamarine;
+  color: black;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: purple;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+.container{
+    width: 550px;
+    max-width: 600px;
+}
+.review {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 20px gray;
+    transition: 0.5s;
+    text-align: center;
+}
+.img-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  #person-img {
+    width: 80px;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  #author {
+    margin-bottom: 0.25rem;
+  }
+  #job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: black;
+    font-size: 0.85rem;
+  }
+  #info {
+    margin-bottom: 0.75rem;
+  }
+  .prev-btn,
+  .next-btn {
+    color: purple;
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .prev-btn:hover,
+  .next-btn:hover {
+    color: green;
+  }
+  .random-btn {
+    margin-top: 0.5rem;
+    background: yellowgreen;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    border-color:gray;
+    cursor: pointer;
+  }
+  .random-btn:hover {
+    background: red;
+    color: white;
+  }
