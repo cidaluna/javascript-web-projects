@@ -4,10 +4,10 @@ const reviews = [
       name: "Sara J.",
       job: "Web Developer JS",
       img:
-        "/sara.jpg",
+        "./images/sara.jpg",
       info:
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        incididunt ut labore et dolore magna aliqua. 
          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     },
     {
@@ -15,31 +15,31 @@ const reviews = [
       name: "Jhon W.",
       job: "UX Designer",
       img:
-      "/jhon.jpg",
+      "./images/jhon.jpg",
         info:
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Letraset used it on their dry-transfer sheets.`,
     },
     {
       id: 3,
       name: "Julia M.",
       job: "Web Developer Senior",
       img:
-        "/julia.jpg",
+        "./images/julia.jpg",
       info:
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+      `The passage experienced a surge in popularity during the 1960s when 
+      Letraset used it on their dry-transfer sheets.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
     },
     {
       id: 4,
       name: "Ruth A.",
       job: "IT Manager",
       img:
-        "/ruth.jpg",
+        "./images/ruth.jpg",
       info:
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      `Lorem ipsum dolor, sed do eiusmod tempor it on their dry-transfer sheets.
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     }
@@ -56,11 +56,41 @@ const randomBtn = document.querySelector(".random-btn");
 
 let currentItem = 0;
 
+//load initial item
 window.addEventListener("DOMContentLoaded", function (){
-    const item = reviews[currentItem];
-    img.src = item.img;
-    author.textContent = item.name;
-    job.textContent = item.job;
-    info.textContent = item.info;
+    showPerson();
 });
 
+//show person based on item array
+function showPerson(){
+  const item = reviews[currentItem];
+  img.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.info;
+}
+
+// show next person
+nextBtn.addEventListener("click", function(){
+  currentItem++;
+  if(currentItem > reviews.length - 1){
+    currentItem = 0;
+  }
+  showPerson();
+});
+
+// show prev person
+prevBtn.addEventListener("click", function(){
+  currentItem--;
+  if(currentItem < 0){
+    currentItem = reviews.length - 1;
+  }
+  showPerson();
+});
+
+// show random person
+randomBtn.addEventListener("click", function() {
+  currentItem = Math.floor(Math.random() * reviews.length);
+  console.log(currentItem);
+  showPerson();
+});
