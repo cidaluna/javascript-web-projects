@@ -25,12 +25,6 @@ p{
   text-align: justify;
   margin-top: 10px;
 }
-
-.hero{
-  display: flex;
-  justify-content: center;
-}
-
 .modal-btn{
     background-color: transparent;
     color:orange;
@@ -53,21 +47,8 @@ p{
     color: white;
     border: 2px solid white;
 }
-.close-btn {
-  font-size: 1.75rem;
-  background: transparent;
-  border-color: transparent;
-  color: blue;
-  transition: 0.5s;
-  cursor: pointer;
-  color: royalblue;
-  float: right;
-}
-.close-btn:hover {
-  color: gray;
-  transform: rotate(360deg);
-}
 .modal-overlay{
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -77,7 +58,6 @@ p{
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
 }
-
 .modal-content{
   background-color: #f4f4f4;
   margin: 20% auto;
@@ -85,4 +65,23 @@ p{
   width: 50%;
   border-radius: 0.5rem;
   box-shadow: 0 2px 10px royalblue;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+}
+.close-btn {
+  font-size: 1.75rem;
+  background: transparent;
+  border-color: transparent;
+  color: blue;
+  transition: 0.5s;
+  cursor: pointer;
+  color: royalblue;
+  float: right;
+  letter-spacing: 2px;
+}
+.close-btn:hover {
+  color: gray;
+  transform: rotate(360deg);
 }
