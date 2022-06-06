@@ -29,6 +29,11 @@ body {
     padding: 10px;
     cursor: pointer;
     font-size: 1.5rem;
+    transition: all 0.3s linear;
+    border: none;
+}
+.question-btn:hover{
+    transform: rotate(90deg);
 }
 .question-title{
     text-transform: capitalize;
@@ -50,4 +55,28 @@ body {
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 40px;
+}
+
+
+
+.question-text{
+    display: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem 0rem;
+}
+
+.show-text .question-text{
+    display: block;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-text .minus-icon{
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
 }
