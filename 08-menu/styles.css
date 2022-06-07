@@ -24,42 +24,93 @@ main {
     display: grid;
     place-items: center;
 }
-.underline {
-    height: 0.25rem;
-    width: 7rem;
-    background: var(--under);
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 .title {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
-  h4{
-    letter-spacing: var(--spacing);
-    text-transform: capitalize;
+.underline {
+  height: 0.25rem;
+  width: 6rem;
+  background: var(--under);
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-center{
+  grid-template-columns: 1fr 1fr;
+  width: 95vw;
+  margin: 0 auto;
+  max-width: 1180px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
 
-  }
-  .item-text{
-    color: var(--gray);
-    padding-top: 1rem;
-  }
+.menu-item{
+  display: grid;
+  gap: 0 1.25rem;
+  max-width: 25rem;
+}
 
-  .price{
-    color: blue;
-  }
 
-  .photo{
-    object-fit: cover;
-    height: 200px;
-    border: 0.55rem solid var(--under);
-    border-radius: var(--spacing);
-  }
+.photo{
+  object-fit: cover;
+  height: 200px;
+  border: 0.55rem solid var(--under);
+  border-radius: var(--spacing);
+}
 
-  .item-info header{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.5px dotted lightcoral;
-  }
+.price{
+  color: blue;
+}
+
+
+.item-info header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted lightcoral;
+}
+
+.item-info h4{
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item-text{
+  color: var(--gray);
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
   
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo {
+    height: 175px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
