@@ -24,10 +24,35 @@ main {
     display: grid;
     place-items: center;
 }
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.filter-btn{
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: blue;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 0.5rem;
+  margin: 10px 10px 30px 10px;
+}
+
+.filter-btn:hover{
+  background-color: lightskyblue;
+  color: blue;
+  box-shadow: 1px 3px gray;
+}
 
 .title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .underline {
@@ -53,7 +78,6 @@ main {
   max-width: 25rem;
 }
 
-
 .photo{
   object-fit: cover;
   height: 200px;
@@ -64,7 +88,6 @@ main {
 .price{
   color: blue;
 }
-
 
 .item-info header{
   display: flex;
@@ -84,6 +107,22 @@ main {
   color: var(--gray);
   margin-bottom: 0;
   padding-top: 1rem;
+}
+.footer{
+  width: 100%;
+  margin-top: 25px;
+  display: fixed;
+  bottom: 0%;
+  height: 100px;
+  background-color: gray;
+  color: lightskyblue;
+}
+
+.footer p{
+  text-align: center;
+  height: auto;
+  font-size: 20px;
+  padding: 30px 10px;
 }
   
 @media screen and (min-width: 768px) {
