@@ -149,7 +149,13 @@ About
 */
 .title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 0.5rem;
+}
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: var(--clr-red);
+  margin: auto;
 }
 .title p {
   width: 80%;
@@ -199,6 +205,7 @@ About
   text-transform: capitalize;
   font-size: 1rem;
   display: block;
+  color: var(--clr-red);
   background: var(--clr-grey);
   cursor: pointer;
   transition: var(--transition);
@@ -206,7 +213,7 @@ About
 }
 .tab-btn:hover:not(.active) {
   background: var(--clr-primary);
-  color: var(--clr-grey);
+  color: var(--clr-white);
 }
 .about-content {
   border-bottom-left-radius: var(--radius);
