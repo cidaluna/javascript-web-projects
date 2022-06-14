@@ -112,7 +112,7 @@ main {
   width: 100%;
   margin-top: 25px;
   display: fixed;
-  bottom: 0%;
+  bottom: 0px;
   height: 100px;
   background-color: gray;
   color: lightskyblue;
@@ -122,7 +122,7 @@ main {
   text-align: center;
   height: auto;
   font-size: 20px;
-  padding: 30px 10px;
+  padding-top: 30px;
 }
   
 @media screen and (min-width: 768px) {
