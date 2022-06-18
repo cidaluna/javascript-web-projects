@@ -10,16 +10,12 @@
     margin: 0;
     padding: 0;
 }
-body{
-    width: 1170px;
-    margin: 0 auto;
-    max-width: 1170px;
-}
-h1{
+.title{
     text-transform: capitalize;
-    margin-bottom: 2rem;
+    margin: 1rem 0rem;
     color: var(--clr-indigo);
     width: 100%;
+    text-align: center;
 }
 .gift-info h3{
     text-transform: capitalize;
@@ -39,6 +35,9 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.section-center h1{
+    width: 100%;
 }
 
 img{
