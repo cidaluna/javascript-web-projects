@@ -22,4 +22,8 @@ const months = [
     'Saturday',
   ];
 
-  
+  const giveaway = document.querySelector('.giveaway');
+  const deadline = document.querySelectorAll('.deadline');
+  const items = document.querySelectorAll('.deadline-format h4');
+  console.log(items);
+

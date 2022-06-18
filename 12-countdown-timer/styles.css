@@ -1,7 +1,8 @@
 :root{
     --clr-blue: #49a6e9;
     --clr-violet: blueviolet;
-    --clr-green: green;
+    --clr-indigo: #4B0082;
+    --clr-sky:  	#87CEEB;
     --ff-primary: "Roboto", sans-serif;
 }
 
@@ -17,8 +18,19 @@ body{
 h1{
     text-transform: capitalize;
     margin-bottom: 2rem;
-    color: var(--clr-violet);
+    color: var(--clr-indigo);
     width: 100%;
+}
+.gift-info h3{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: var(--clr-indigo);
+    width: 100%;
+}
+.giveaway{
+    text-transform: capitalize;
+    color: #8A2BE2;
+    margin-bottom: 1rem;
 }
 .section-center{
     width: 1170px;
@@ -41,8 +53,8 @@ img{
     width:99%;
     max-width: 500px;
     height: auto;
-    background-color: var(--clr-green);
-    padding: 10px;
+    background-color: var(--clr-sky);
+    padding: 20px;
     border-radius: 1rem;
     
 }
@@ -50,8 +62,48 @@ img{
 .right{
     width: 99%;
     max-width: 500px;
-    background-color: var(--clr-blue);
-    padding: 10px;
+    background-color: var(--clr-sky);
+    padding: 20px;
     border-radius: 1rem;
 
 }
+
+.days, .hours, .mins, .secs, span{
+    padding: 10px auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.deadline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+
+}
+.deadline-format{
+    width: 60px;
+    max-width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+.footer{
+    width: 100%;
+    margin-top: 25px;
+    display: fixed;
+    bottom: 0px;
+    height: 100px;
+    background-color: gray;
+    color: lightskyblue;
+  }
+  
+  .footer p{
+    text-align: center;
+    height: auto;
+    font-size: 20px;
+    padding-top: 30px;
+  }
