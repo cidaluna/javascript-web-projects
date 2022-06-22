@@ -38,7 +38,7 @@ const text = [
         let tempText = text.slice(0, value);
         // console.log(tempText);
         tempText = tempText.map(function(item){
-            return `<p class="result"> ${text[random]} </p>`;
+            return `<p class="result"> ${item} </p>`;
         }).join(""); // join to delete semicolon
         result.innerHTML = tempText;
     }
