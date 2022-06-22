@@ -36,6 +36,53 @@ h3{
     text-align: center;
 }
 
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+input#grocery{
+    padding: 0.5rem;
+    background-color: lightgray;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-color: transparent;
+    color: blueviolet;
+}
+
+.submit-btn{
+    border-color: transparent;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+
+.submit-btn:hover{
+    background-color: gray;
+    color: blueviolet;
+}
+
+.clear-btn{
+    border-color: transparent;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+
+.clear-btn:hover{
+    background-color: gray;
+    color: blueviolet;
+}
+
 .footer{
     width: 100%;
     margin-top: 25px;
