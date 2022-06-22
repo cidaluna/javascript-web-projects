@@ -30,6 +30,9 @@ body{
 
 #amount{
     font-size: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .btn{
@@ -49,7 +52,10 @@ body{
 }
 
 .result{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: black;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+p{
+    margin: 1.2rem auto;
 }

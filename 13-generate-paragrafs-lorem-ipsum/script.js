@@ -20,17 +20,26 @@ const text = [
 
   form.addEventListener("submit", function (e){
     e.preventDefault(); // captura o evento do clique
-    //console.log('hello');
+    // console.log('hello');
     const value = parseInt(amount.value); // devo transformar para number, caso contrario retorna string
     console.log(typeof value);
+    const random = Math.floor(Math.random() * text.length);
 
-    console.log(isNaN(value));
+
+    // console.log(isNaN(value));
     // empty value
     // negative values -1, -2 ...
     // bigger than 09
     if(isNaN(value) || value <= 0 || value > 9){
         result.innerHTML = `<p class="result"> ${message} </p>`;
+        // or I can return just 1 random paragraf, eg.
+        // result.innerHTML = `<p class="result"> ${text[random]} </p>`;
     }else{
-        result.innerHTML = `<p class="result"> ${text[0]} </p>`;
+        let tempText = text.slice(0, value);
+        // console.log(tempText);
+        tempText = tempText.map(function(item){
+            return `<p class="result"> ${text[random]} </p>`;
+        }).join(""); // join to delete semicolon
+        result.innerHTML = tempText;
     }
   });
