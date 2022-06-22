@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #E2E8F0;
+}
+
+.section-center{
+    margin: 0 auto;
+    width: 1170px;
+    max-width: 1170px;
+    text-align: center;
+}
+
+.title{
+    margin: 2rem auto;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    color: green;
+}
+
+.lorem-form{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+#amount{
+    font-size: 1rem;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 1px 13px chocolate;
+}
+
+.lorem-text{
+    margin-top: 2rem;
+}
+
+.result{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: black;
+}

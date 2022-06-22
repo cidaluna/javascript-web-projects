@@ -11,13 +11,26 @@ const text = [
     `Rutters Plate Fleet boom chandler Brethren of the Coast handsomely lookout marooned brigantine knave. Buccaneer gangway jack rum loot spyglass line Jack Tar fore gaff. Gaff topmast scuttle ballast swab draught measured fer yer chains dance the hempen jig Chain Shot yardarm.`,
   ];
 
-  const form = document.querySelector('.lorem-form');
-  const amount = document.getElementById('amount');
-  const result = document.querySelector('.lorem-text');
+  const form = document.querySelector(".lorem-form");
+  const amount = document.getElementById("amount");
+  const result = document.querySelector(".lorem-text");
 
-  form.addEventListener('submit', function (e){
+
+  const message = "Sorry, the number is not valid!"
+
+  form.addEventListener("submit", function (e){
     e.preventDefault(); // captura o evento do clique
     //console.log('hello');
-    const value = parseInt(amount.value);
-    console.log(value);
+    const value = parseInt(amount.value); // devo transformar para number, caso contrario retorna string
+    console.log(typeof value);
+
+    console.log(isNaN(value));
+    // empty value
+    // negative values -1, -2 ...
+    // bigger than 09
+    if(isNaN(value) || value <= 0 || value > 9){
+        result.innerHTML = `<p class="result"> ${message} </p>`;
+    }else{
+        result.innerHTML = `<p class="result"> ${text[0]} </p>`;
+    }
   });
