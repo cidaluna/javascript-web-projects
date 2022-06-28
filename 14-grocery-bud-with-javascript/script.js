@@ -1,6 +1,6 @@
 const alert = document.querySelector(".alert");
 const form = document.querySelector(".grocery-form");
-const grocery = document.getElementById("grocery");
+const grocery = document.getElementById("grocery"); // input value
 const submitBtn = document.querySelector(".submit-btn");
 const container = document.querySelector(".grocery-container");
 const list = document.querySelector(".grocery-list");
@@ -10,6 +10,20 @@ let editElement;
 let editFlag = false;
 let editID = "";
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", addItem);
 
-});
+function addItem(e){
+    e.preventDefault();
+    //console.log(grocery.value);
+    const value = grocery.value;
+    const id = new Date().getTime().toString();
+    //console.log(id);
+
+    if(value !== "" && editFlag === false){
+        console.log("add item to the list");
+    }else if(value !== "" && editFlag === true){
+        console.log("editing");
+    }else{
+        console.log("empty value");
+    }
+}
