@@ -45,6 +45,12 @@ function addItem(e){
               </button>
             </div>
         `;
+
+        // delete 
+        const deleteBtn = document.querySelector(".delete-btn");
+        const editBtn = document.querySelector(".edit-btn");
+        deleteBtn.addEventListener("click", deleteItem);
+        editBtn.addEventListener("click", editItem);
         // append child
         list.appendChild(element);
         // display alert
@@ -87,6 +93,16 @@ function clearItems(){
     displayAlert("empty list", "danger");
     setBackToDefault();
     // localStorage.removeItem("list");
+}
+
+// delete function
+function deleteItem(){
+    console.log("item deleted");
+}
+
+// edit function
+function editItem(){
+    console.log("item edited");
 }
 
 // set back to default
