@@ -12,10 +12,10 @@ Item |  Description                                                             
 07|  [JS - Questions](https://cidaluna.github.io/javascript-web-projects/07-questions/)                                                                 | ✅
 08|  [JS - Menu](https://cidaluna.github.io/javascript-web-projects/08-menu/)                                                                 | ✅
 09|  [JS - Video](https://cidaluna.github.io/javascript-web-projects/09-video/)                                                                 | ✅
-10|  [JS - Scroll Project](https://cidaluna.github.io/javascript-web-projects/10-scroll-project/)                                                                 | ✅
-11|  [JS - Tabs](https://cidaluna.github.io/javascript-web-projects/11-tabs/)                                                                 | ✅
-12|  [JS - CountDown Timer](https://cidaluna.github.io/javascript-web-projects/12-countdown-timer/)                                                                 | ✅
-13|  [JS - Lorem ipsum paragraph](https://cidaluna.github.io/javascript-web-projects/13-generate-paragrafs-lorem-ipsum/)                                                  | ✅
+10|  [JS - Scroll Project](https://cidaluna.github.io/javascript-web-projects/10-scroll-project/)                                                                 | ✅♻
+11|  [JS - Tabs](https://cidaluna.github.io/javascript-web-projects/11-tabs/)                                                                 | ✅♻
+12|  [JS - CountDown Timer](https://cidaluna.github.io/javascript-web-projects/12-countdown-timer/)                                                                 | ✅♻
+13|  [JS - Lorem ipsum paragraph](https://cidaluna.github.io/javascript-web-projects/13-generate-paragrafs-lorem-ipsum/)                                                  | ✅ ♻
 14|  [JS - Grocery Bud](https://cidaluna.github.io/javascript-web-projects/14-grocery-bud-with-javascript/)                                                     | ✅
 15|  [JS - Weather App](https://cidaluna.github.io/javascript-web-projects/15-weather-app/)                                                                      | ✅
 16|  [JS - Calculator App](https://cidaluna.github.io/javascript-web-projects/16-calculator-app/)                                                                      | ✅
