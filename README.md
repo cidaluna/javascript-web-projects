@@ -19,6 +19,7 @@ Item |  Description                                                             
 14|  [JS - Grocery Bud](https://cidaluna.github.io/javascript-web-projects/14-grocery-bud-with-javascript/)                                                     | ✅
 15|  [JS - Weather App](https://cidaluna.github.io/javascript-web-projects/15-weather-app/)                                                                      | ✅
 16|  [JS - Calculator App](https://cidaluna.github.io/javascript-web-projects/16-calculator-app/)                                                                      | ✅
+17|  [JS - Music Player App](https://cidaluna.github.io/javascript-web-projects/17-music-player-app/)                                                                      | ✅
 
 
 ___
