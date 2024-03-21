@@ -2,4 +2,4 @@
 
 Screenshot - Music Player App in Javascript  
 
-![Music Player App](./assets/)
+![Music Player App](./assets/music-player-app-js.PNG)
