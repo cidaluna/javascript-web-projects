@@ -2,4 +2,4 @@
 
 Screenshot - Password Generator in Javascript  
 
-![Password Generator](./images/)
+![Password Generator](./images/password-generator-js.PNG)
