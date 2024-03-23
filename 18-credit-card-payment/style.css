@@ -65,7 +65,7 @@ html{
 
 .container form .submit-btn{
     width: 100%;
-    background: linear-gradient(45deg,blueviolet,deeppink);
+    background: linear-gradient(45deg,#142142,#0855A3);
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
@@ -76,8 +76,9 @@ html{
 }
 
 .container form .submit-btn:hover{
-    letter-spacing: 2px;
-    opacity: .8;
+    color: #0855A3;
+    background: #fff;
+    border: 2px solid #0855A3;
 }
 
 .container .card-container{
@@ -93,8 +94,8 @@ html{
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg,blueviolet,deeppink);
-    border-radius: 5px;
+    background: linear-gradient(45deg,#142142,#0855A3);
+    border-radius: 10px;
     backface-visibility: hidden;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
     padding: 20px;
@@ -138,8 +139,8 @@ html{
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg,blueviolet,deeppink);
-    border-radius: 5px;
+    background: linear-gradient(45deg,#142142,#0855A3);
+    border-radius: 10px;
     padding: 10px;
     text-align: right;
     backface-visibility: hidden;
