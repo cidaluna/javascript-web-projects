@@ -1,5 +1,7 @@
 # Credit Card Payment
 
-Screenshot - Credit Card Payment in Javascript  
+Screenshots - Credit Card Payment in Javascript  
 
-![Credit Card Payment](./images/)
+![Front Credit Card Payment](./images/front-credit-card.PNG)
+<br>
+![Back Credit Card Payment](./images/back-credit-card.PNG)
