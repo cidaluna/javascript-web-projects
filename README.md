@@ -22,6 +22,7 @@ Item |  Description                                                             
 17|  [JS - Music Player App](https://cidaluna.github.io/javascript-web-projects/17-music-player-app/)                                                                      | ✅
 18|  [JS - Credit Card Payment](https://cidaluna.github.io/javascript-web-projects/18-credit-card-payment/)                                                                      | ✅
 19|  [JS - Password Generator](https://cidaluna.github.io/javascript-web-projects/19-password-generator/)                                                                      | ✅
+20|  [JS - URL Shortener](https://cidaluna.github.io/javascript-web-projects/20-url-shortener/)                                                                      | ✅
 ___
 
 | Legenda - Status     |
