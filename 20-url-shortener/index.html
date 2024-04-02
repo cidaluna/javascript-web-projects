@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>URL Shortener | Cida Luna</title>
 </head>
 <body>
+    <div class="container">
+        <i class="bx bx-link-alt"></i>
+        <h1>URL Shortener</h1>
+        <label for="originalUrl">Paste a long URL:</label>
+        <input type="text" id="originalUrl" placeholder="https://example.com">
+        <div class="buttons">
+            <button id="reload-btn">Reload</button>
+            <button id="short-btn">Short it</button>
+        </div>
+        <label for="shortenedUrl">Shortened URL:</label>
+        <textarea id="shortenedUrl" rows="3" readonly></textarea>
+    </div>
     
+    
+    <script src="script.js"></script>
 </body>
 </html>
