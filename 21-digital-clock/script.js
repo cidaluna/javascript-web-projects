@@ -14,10 +14,20 @@ function updateClock(){
         ampm = "PM"
     }
 
+    // add zero digit on left side
+    hour = hour < 10 ? "0" +hour : hour;
+    minute = minute < 10 ? "0" +minute : minute;
+    second = second < 10 ? "0" +second : second;
+   
+
     hourEl.innerText = hour;
     minuteEl.innerText = minute;
     secondEl.innerText = second;
     ampmEl.innerText = ampm;
+    // call every 1 second
+    setTimeout(()=>{
+        updateClock();
+    }, 1000);
 }
 
 updateClock();
