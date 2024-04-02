@@ -2,4 +2,4 @@
 
 Screenshot - Geometric Art Generator in Javascript  
 
-![Geometric Art Generator](./images/)
+![Geometric Art Generator](./images/geometric-art-generator.PNG)
