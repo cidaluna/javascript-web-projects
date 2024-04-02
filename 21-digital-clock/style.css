@@ -7,13 +7,15 @@ body{
     height: 100vh;
     justify-content: center;
     background: url(https://images.unsplash.com/photo-1498998754966-9f72acbc85b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
 }
 
 h2{
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
+    color: darkblue;
 }
 
 .clock{
@@ -22,22 +24,46 @@ h2{
 
 .clock div{
     margin: 5px;
+    position: relative;
 }
 
 .clock span{
-    width: 100px;
+    width: 150px;
     height: 80px;
     background-color: slateblue;
     padding: 20px;
     opacity: .8;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* black and opacity 30% */
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    font-size: 40px;
+    width: 80px;
+    height: 28px;
+    background: green;
 }
 
 p{
     margin-top: 30px;
-    color: white;
+    color: rgba(0,0,0,0.5);
 }
 
 p a{
-    color: white;
+    color: rgba(0,0,0,0.5); ;
 }
