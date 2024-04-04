@@ -25,7 +25,7 @@ Item |  Description                                                             
 20|  [JS - URL Shortener](https://cidaluna.github.io/javascript-web-projects/20-url-shortener/)                                                                      | ✅
 21|  [JS - Digital Clock](https://cidaluna.github.io/javascript-web-projects/21-digital-clock/)                                                                      | ✅
 22|  [JS - Geometric Art Generator](https://cidaluna.github.io/javascript-web-projects/22-geometric-art-generator/)                                                                      | ✅
-
+23|  [JS - Image Search App](https://cidaluna.github.io/javascript-web-projects/23-image-search-app/)                                                                      | ✅
 
 
 ___

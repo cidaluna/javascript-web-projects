@@ -1,4 +1,4 @@
-# URL Shortener
+# Image Search App
 
 Screenshot - Image Search App in Javascript  
 
