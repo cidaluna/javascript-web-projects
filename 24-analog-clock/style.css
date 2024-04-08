@@ -92,20 +92,20 @@ body{
 
 .clock .hour,
 .clock .hour .hr{
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
 }
 
 .clock .minute,
 .clock .minute .min{
-    width: 190px;
-    height: 190px;
+    width: 230px;
+    height: 230px;
 }
 
 .clock .second,
 .clock .second .sec{
-    width: 230px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
 }
 
 .clock .hour .hr,
@@ -121,7 +121,7 @@ body{
     content: '';
     position: absolute;
     width: 8px;
-    height: 80px;
+    height: 96px;
     background-color: #ff3d62;
     z-index: 10;
     border-radius: 10px;
@@ -131,7 +131,7 @@ body{
     content: '';
     position: absolute;
     width: 6px;
-    height: 100px;
+    height: 120px;
     background-color: #4e8bf4;
     z-index: 11;
     border-radius: 8px;
@@ -141,7 +141,7 @@ body{
     content: '';
     position: absolute;
     width: 3px;
-    height: 150px;
+    height: 180px;
     background-color: #fff;
     z-index: 12;
     border-radius: 8px;
