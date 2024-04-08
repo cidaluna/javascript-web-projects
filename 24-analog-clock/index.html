@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
     <title>Analog Clock | Cida Luna</title>
 </head>
 <body>
@@ -12,19 +13,21 @@
         <div class="circle"></div>
 
         <div class="clock">
-            <img src="./images/clock.png" alt="Clock">
-        </div>
+            <div class="clock-bg">
+                <img src="./images/clock.png" alt="Clock">
+            </div>
+        
+            <div class="hour">
+                <span class="hr" id="hr"></span>
+            </div>
 
-        <div class="hour">
-            <span class="hr" id="hr"></span>
-        </div>
+            <div class="minute">
+                <span class="min" id="min"></span>
+            </div>
 
-        <div class="minute">
-            <span class="min" id="min"></span>
-        </div>
-
-        <div class="second">
-            <span class="sec" id="sec"></span>
+            <div class="second">
+                <span class="sec" id="sec"></span>
+            </div>
         </div>
     </div>
     
