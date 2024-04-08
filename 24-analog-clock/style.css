@@ -141,7 +141,7 @@ body{
     content: '';
     position: absolute;
     width: 3px;
-    height: 140px;
+    height: 150px;
     background-color: #fff;
     z-index: 12;
     border-radius: 8px;
