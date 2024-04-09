@@ -27,7 +27,7 @@ Item |  Description                                                             
 22|  [JS - Geometric Art Generator](https://cidaluna.github.io/javascript-web-projects/22-geometric-art-generator/)                                                                      | ✅
 23|  [JS - Image Search App](https://cidaluna.github.io/javascript-web-projects/23-image-search-app/)                                                                      | ✅
 24|  [JS - Analog Clock](https://cidaluna.github.io/javascript-web-projects/24-analog-clock/)                                                                      | ✅
-
+25|  [JS - Detect Battery Level](https://cidaluna.github.io/javascript-web-projects/25-detect-battery-level/)                                                                      | ✅
 
 ___
 
