@@ -23,7 +23,7 @@ body{
     width: 450px;
     background-color: #fff;
     color: black;
-    padding: 20px;
+    padding: 20px 0px;
     border-radius: 10px;
 }
 
@@ -120,9 +120,44 @@ body{
 
 .task .settings{
     cursor: pointer;
+    position: relative;
 }
 
 .settings .task-menu{
-
+    position: absolute;
+    z-index: 2;
+    transform: scale(0);
+    right: -3px;
+    bottom: -70px;
+    padding: 5px 0;
+    border-radius: 5px;
+    background: #fff;
+    transform-origin: top right;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
 }
 
+/* open menu options */
+.settings:hover .task-menu{
+    transform: scale(1);
+}
+
+.task-menu li{
+    height: 25px;
+    font-size: 16px;
+    padding: 17px 15px;
+    margin-bottom: 2px;
+    justify-content: flex-start;
+}
+
+.task-menu li:last-child{
+    margin-bottom: 0;
+}
+
+.task-menu li:hover{
+    background: #eeeeee;
+}
+
+.task-menu li i {
+    padding-right: 9px;
+}
