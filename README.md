@@ -28,6 +28,7 @@ Item |  Description                                                             
 23|  [JS - Image Search App](https://cidaluna.github.io/javascript-web-projects/23-image-search-app/)                                                                      | ✅
 24|  [JS - Analog Clock](https://cidaluna.github.io/javascript-web-projects/24-analog-clock/)                                                                      | ✅
 25|  [JS - Detect Battery Level](https://cidaluna.github.io/javascript-web-projects/25-detect-battery-level/)                                                                      | ✅
+26|  [JS - To Do List](https://cidaluna.github.io/javascript-web-projects/26-to-do-list/)                                                                      | ✅
 
 ___
 
