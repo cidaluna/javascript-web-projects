@@ -6,9 +6,58 @@
     <title>To Do List | Cida Luna</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="task-input">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <input type="text" placeholder="Add a new task">
+        </div>
+
+        <div class="controls">
+            <div class="filters">
+                <span id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+
+        <ul class="task-box">
+            <li class="task">
+                <label for="1">
+                    <input type="checkbox" id="1">
+                    <p>Teste 1</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </li>
+
+            <li class="task">
+                <label for="2">
+                    <input type="checkbox" id="2">
+                    <p>Teste 2</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </li>
+
+            <li class="task">
+                <label for="3">
+                    <input type="checkbox" id="3">
+                    <p>Teste 3</p>
+                </label>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
