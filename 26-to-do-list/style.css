@@ -10,9 +10,9 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    overflow: hidden;
     background-color: #3c87ff;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,10 @@ body{
     color: black;
     padding: 20px 0px;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    height: auto;
 }
 
 .task-input{
