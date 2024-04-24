@@ -19,23 +19,27 @@ body{
 }
 
 .wrapper{
-    background-color: red;
-    align-items: flex-end;
+    width: 900px;
+    min-height: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-h1{
+h1, p{
     color: #fff;
     text-align: center;
 }
 
 textarea{
-    width: 400px;
-    max-width: 500px;
-    height: 300px;
+    width: 480px;
+    height: 380px;
     border-radius: 10px;
-    margin: 10px 0px;
+    padding: 6px;
     border: none;
-    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 span{
@@ -45,6 +49,7 @@ span{
 }
 
 button{
+    width: fit-content;
     padding: 10px 20px;
     color: #704472;
     font-size: 14px;
@@ -53,6 +58,9 @@ button{
     border-radius: 8px;
     text-transform: uppercase;
     cursor: pointer;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 button:hover{

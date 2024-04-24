@@ -29,6 +29,7 @@ Item |  Description                                                             
 24|  [JS - Analog Clock](https://cidaluna.github.io/javascript-web-projects/24-analog-clock/)                                                                      | ✅
 25|  [JS - Detect Battery Level](https://cidaluna.github.io/javascript-web-projects/25-detect-battery-level/)                                                                      | ✅
 26|  [JS - To Do List](https://cidaluna.github.io/javascript-web-projects/26-to-do-list/)                                                                      | ✅
+27|  [JS - Word And Character Counter](https://cidaluna.github.io/javascript-web-projects/27-word-and-character-counter/)                                                                      | ✅
 
 ___
 

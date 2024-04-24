@@ -10,15 +10,13 @@
 <body>
     <div class="wrapper">
         <h1>Word and Character Counter</h1>
-        <textarea>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis a 
-            at officiis laborum, dolorum quia ab quisquam quibusdam ipsam omnis eveniet.
-        </textarea>
-        <span>Total word = 0 </span>
-        <span>Total character = 0 </span>
-        <button>Count</button>
+        <textarea id="inputText" placeholder="Enter with your text..."></textarea>
+        <p>Total characteres <span id="showTotalCharacteres"></span></p>
+        <p>Total characteres without space <span id="showTotalCharacteresWithoutSpaces"></span></p>
+        <p>Total words <span id="showTotalWords"></span></p>
+        <button onclick="countWords()">Count</button>
+        <button onclick="reset()">Reset</button>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
