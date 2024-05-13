@@ -113,4 +113,23 @@ button:disabled{
 .status{
     margin: 10px;
     color: #333;
+    text-align: center;
+}
+
+@media(max-width: 450px){
+    .container, p{
+        width: 96%;
+        height: fit-content;
+        margin: 0 auto;
+        word-wrap: break-word;
+    }
+
+    .btn, .buttons, select{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        word-wrap: break-word;
+    }
 }
