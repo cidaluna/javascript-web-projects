@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Text to Speech | Cida Luna</title>
+</head>
+<body>
+    <div class="container">
+        <p class="header">Text To Speech</p>
+        <textarea id="inputText" placeholder="Write anything here..."></textarea>
+
+        <div class="settings">
+            <div class="voice">
+                <p>Select Voice: </p>
+                <select name="voice" id="voice"></select>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+
+        <div class="buttons">
+            <button class="btn clear" disabled>Clear</button>
+            <button class="btn speech" onclick="speech()">
+                <i class='bx bx-user-voice'></i>
+                Convert to Speech</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
