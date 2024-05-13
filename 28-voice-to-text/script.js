@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const recognition = new webkitSpeechRecognition() || new SpeechRecognition();
-
     const languageSelect = document.getElementById('language');
     const resultContainer = document.querySelector('.result p.resultText');
-    const startListeningButton = document.querySelector('.btn .record');
-    const recordButtonText = document.querySelector('.btn .record p');
-    const clearButton = document.querySelector('.btn .clear');
-    const downloadButton = document.querySelector('.btn .download');
+    const startListeningButton = document.querySelector('.btn.record');
+    const recordButtonText = document.querySelector('.btn.record p');
+    const clearButton = document.querySelector('.btn.clear');
+    const downloadButton = document.querySelector('.btn.download');
 
     let recognizing = false;
+
     languages.forEach(language => {
         const option = document.createElement('option');
         option.value = language.code;
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     downloadButton.disabled = true;
 
-    recognition.onresult = (event) =>{
+    recognition.onresult = (event) => {
         const result = event.results[event.results.length - 1][0].transcript;
         resultContainer.textContent = result;
         downloadButton.disabled = false;
@@ -39,33 +39,34 @@ document.addEventListener('DOMContentLoaded', () => {
     recognition.onend = () => {
         recognizing = false;
         startListeningButton.classList.remove('recording');
-        recordButtonText.textContent = 'Start Listening in JS';
+        recordButtonText.textContent = 'Start Listening';
     };
 
     downloadButton.addEventListener('click', downloadResult);
 
-    function toggleSpeechRecognition(){
-        if(recognizing){
+    function toggleSpeechRecognition() {
+        if (recognizing) {
             recognition.stop();
-        }else{
+        } else {
             recognition.start();
         }
 
         recognizing = !recognizing;
         startListeningButton.classList.toggle('recording', recognizing);
-        recordButtonText.textContent = 'STOP Listening';
+        recordButtonText.textContent = 'Stop Listening';
     }
 
-    function clearResults(){
+    function clearResults() {
         resultContainer.textContent = '';
         downloadButton.disabled = true;
     }
 
-    function downloadResult(){
+    function downloadResult() {
         const resultText = resultContainer.textContent;
 
-        const blob = new Blob([resultText], {type: 'text/plain'});
+        const blob = new Blob([resultText], { type: 'text/plain' });
         const url = URL.createObjectURL(blob);
+
         const a = document.createElement('a');
         a.href = url;
         a.download = 'Your-Text.txt';
@@ -77,4 +78,5 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
     }
+
 });
