@@ -9,9 +9,35 @@
     <title>Voice to Text | Cida Luna - Analista de Sistemas, Desenvolvedora Web, Analista de Dados</title>
 </head>
 <body>
+    <div class="container">
+        <p class="header">Voice To Text</p>
+        <div class="settings">
+            <div class="language">
+                <p>Language: </p>
+                <select id="language"></select>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <button class="btn record">
+            <div class="icon">
+                <i class='bx bx-microphone'></i>
+                <i class='bx bx-loader bx-spin'></i>
+            </div>
+            <p>Start Listening</p>
+        </button>
 
+        <p>Result: </p>
+        <div class="result" spellcheck="false">
+            <p class="resultText"></p>
+        </div>
+        <div class="separator"></div>
+
+        <div class="buttons">
+            <button class="btn clear">Clear</button>
+            <button class="btn download">Download</button>
+        </div>
+    </div>
     
-
     <script src="languages.js"></script>
     <script src="script.js"></script>
 </body>
