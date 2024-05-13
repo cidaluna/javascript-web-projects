@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <title>Text to Speech | Cida Luna</title>
@@ -11,24 +11,17 @@
 <body>
     <div class="container">
         <p class="header">Text To Speech</p>
-        <textarea id="inputText" placeholder="Write anything here..."></textarea>
-
-        <div class="settings">
-            <div class="voice">
-                <p>Select Voice: </p>
-                <select name="voice" id="voice"></select>
-            </div>
-        </div>
+        <textarea id="inputTextarea" placeholder="Write anything here..."></textarea>
+        <select id="voices"></select>
         
-        <div class="separator"></div>
-
         <div class="buttons">
-            <button class="btn clear" disabled>Clear</button>
-            <button class="btn speech" onclick="speech()">
-                <i class='bx bx-user-voice'></i>
-                Convert to Speech</button>
+            <button class="btn clear" id="clear" >Clear</button>
+            <button class="btn convert" id="convert">
+                <i class="fa-solid fa-microphone-lines"></i>
+                Speech</button>
         </div>
     </div>
+    <p class="status">Mozilla Firefox does not support the Voices Speech List</p>
     
     <script src="script.js"></script>
 </body>
