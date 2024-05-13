@@ -13,6 +13,7 @@ body{
     outline: none;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right bottom, #00FFD0 30%,
@@ -86,11 +87,11 @@ body{
     display: none;
 }
 
-.container .record .recording .bx-spin{
+.container .record.recording .bx-spin{
     display: block;
 }
 
-.container .record .recording i{
+.container .record.recording i{
     display: none;
 }
 
@@ -120,4 +121,8 @@ body{
 
 .buttons .btn{
     margin-bottom: 10px;
+}
+
+.status{
+    margin: 10px;
 }

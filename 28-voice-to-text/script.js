@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const recognition = new webkitSpeechRecognition() || new SpeechRecognition();
+
+    var SpeechRecognition = (window.webkitSpeechRecognition) || (window.SpeechRecognition);
+
+    if (SpeechRecognition !== undefined) {
+        this.recognition = new SpeechRecognition();
+      } else {
+        console.error('Your browser does not support the Web Speech API');
+        // Nao esta funcionando no navegador Mozilla Firefox 
+      }
+
     const languageSelect = document.getElementById('language');
     const resultContainer = document.querySelector('.result p.resultText');
     const startListeningButton = document.querySelector('.btn.record');

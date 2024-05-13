@@ -30,7 +30,7 @@ Item |  Description                                                             
 25|  [JS - Detect Battery Level](https://cidaluna.github.io/javascript-web-projects/25-detect-battery-level/)                                                                      | ✅
 26|  [JS - To Do List](https://cidaluna.github.io/javascript-web-projects/26-to-do-list/)                                                                      | ✅
 27|  [JS - Word And Character Counter](https://cidaluna.github.io/javascript-web-projects/27-word-and-character-counter/)                                                                      | ✅
-28|  [JS - Voice to Text](https://cidaluna.github.io/javascript-web-projects/28-voice-to-text/)                                                                   | ✅
+28|  [JS - Voice to Text](https://cidaluna.github.io/javascript-web-projects/28-voice-to-text/)                                                                   | ✅♻
 
 ___
 
