@@ -6,12 +6,16 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #704472;
-    min-height: 100vh;
     overflow: scroll;
     display: flex;
     justify-content: center;
@@ -29,11 +33,13 @@ body{
 h1, p{
     color: #fff;
     text-align: center;
+    word-wrap: break-word;
 }
 
 textarea{
     width: 480px;
     height: 380px;
+    word-wrap: break-word;
     border-radius: 10px;
     padding: 6px;
     border: none;
@@ -66,4 +72,60 @@ button{
 button:hover{
     background: #4a2d4c;
     color: #fff;
+}
+
+
+@media(max-width: 450px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #e573eb;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper{
+        width: 94%;
+        height: auto;
+        margin: 0 auto;
+        word-wrap: break-word;
+    }
+
+    textarea{
+        width: 90%;
+        min-height: 200px;
+        word-wrap: break-word;
+    }
+
+}
+
+/* Tablets */
+@media(min-width: 451px) and (max-width: 990px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #7f0186;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        word-wrap: break-word;
+    }
+
+    textarea{
+        width: 80%;
+        min-height: 250px;
+        word-wrap: break-word;
+    }
+
 }
