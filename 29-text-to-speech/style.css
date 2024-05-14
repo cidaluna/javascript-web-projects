@@ -159,7 +159,7 @@ button:disabled{
 /* Tablets */
 @media(min-width: 451px) and (max-width: 990px){
     body{
-        height: auto;
+        height: 100vh;
         width: 100vw;
         background-image: linear-gradient(200deg,blue,purple,red);
         background-repeat: no-repeat;
@@ -183,7 +183,6 @@ button:disabled{
     .btn, .buttons, select{
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px;
         word-wrap: break-word;
