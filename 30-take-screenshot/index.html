@@ -8,8 +8,26 @@
     <title>Take Screenshot - Cida Luna - Analista de Sistemas e Desenvolvedora Web</title>
 </head>
 <body>
-    
+    <div class="login-container">
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username"
+                placeholder="Enter username" required
+                autocomplete="off">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="text" id="password"
+                placeholder="Enter password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <button id="screenshotBtn">Take Screenshot</button>
 
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
