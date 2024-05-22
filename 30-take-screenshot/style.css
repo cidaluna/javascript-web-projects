@@ -23,7 +23,7 @@ html, body {
 .login-container{
     width: 350px;
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -50,6 +50,7 @@ html, body {
     font-size: 14px;
     padding: 3px;
     width: 100%;
+    line-height: 20px;
 }
 
 .login-form button{

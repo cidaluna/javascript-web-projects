@@ -32,6 +32,8 @@ Item |  Description                                                             
 27|  [JS - Word And Character Counter](https://cidaluna.github.io/javascript-web-projects/27-word-and-character-counter/)                                                                      | ✅
 28|  [JS - Voice to Text](https://cidaluna.github.io/javascript-web-projects/28-voice-to-text/)                                                                   | ✅♻
 29|  [JS - Text to Speech](https://cidaluna.github.io/javascript-web-projects/29-text-to-speech/)                                                                   | ✅
+30|  [JS - Take Screenshot](https://cidaluna.github.io/javascript-web-projects/30-take-screenshot/)                                                                   | ✅
+
 
 ___
 
