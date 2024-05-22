@@ -84,3 +84,61 @@ button{
 .circle{
     border-radius: 50%;
 }
+
+
+@media screen and (max-width: 450px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,gray,green);
+        background-repeat: no-repeat;
+    }
+
+    .wrapper{
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button{
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        word-wrap: break-word;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 451px) and (max-width: 990px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,purple,red);
+        background-repeat: no-repeat;
+    }
+
+    .wrapper{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button{
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        word-wrap: break-word;
+    }
+}
