@@ -16,6 +16,7 @@
 body{
     background: #070707;
     color: #fff;
+    overflow: auto;
 }
 
 .battery{
@@ -37,7 +38,7 @@ body{
     align-items: center;
 }
 
-Btext{
+.Btext{
     margin-bottom: 0.5rem;
 }
 
@@ -73,6 +74,12 @@ Btext{
     inset: 2px;
     border-radius: 3rem;
     overflow: hidden;
+}
+
+.info-browser{
+    margin-top: 20px;
+    width: 650px;
+    max-width: 90%;
 }
 
 .Bliquid{
@@ -149,4 +156,99 @@ Btext{
 
 .gradient-color-yellow, .green-color-yellow::after{
     background: var(--gradient-color-yellow);
+}
+
+
+/* Smartphones */
+@media screen and (max-width: 450px){
+    body, section{
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,gray,green);
+        background-repeat: no-repeat;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .Bcard{
+        width: 80%;
+        height: fit-content;
+        word-wrap: break-word;
+    }
+
+    .info-browser{
+        margin-top: 10px;
+        width: 450px;
+        max-width: 94%;
+    }
+
+    .Bdata{
+        display: inline;
+    }
+
+    .Bpercentage{
+        margin-bottom: 0.5rem;
+    }
+
+    .Bstatus{
+        position: inherit;
+        bottom: 0;
+        display: inline;
+    }
+
+    .Bstatus i{
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Tablets */
+@media screen and (min-width: 451px) and (max-width: 990px){
+    body, section{
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,purple,red);
+        background-repeat: no-repeat;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .Bcard{
+        width: 60%;
+        height: fit-content;
+        word-wrap: break-word;
+    }
+
+    .info-browser{
+        margin-top: 10px;
+        width: 451px;
+        max-width: 90%;
+    }
+
+    .Bdata{
+        display: inline;
+    }
+
+    .Bpercentage{
+        margin-bottom: 0.5rem;
+    }
+
+    .Bstatus{
+        position: inherit;
+        bottom: 0;
+        display: inline;
+    }
+
+    .Bstatus i{
+        font-size: 1.5rem;
+    }
+
 }
