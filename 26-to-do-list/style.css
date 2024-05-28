@@ -169,3 +169,81 @@ body{
 .task-menu li i {
     padding-right: 9px;
 }
+
+/* Smartphones - CSS Fixed */
+@media screen and (max-width: 450px){
+    body{
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,gray,green);
+        background-repeat: no-repeat;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .wrapper{
+        width: 90%;
+        height: fit-content;
+        word-wrap: break-word;
+        display: block;      
+    }
+
+    .task-box{
+        word-wrap: break-word;
+    }
+
+    .controls{
+        padding: 12px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .filters{
+        max-width: 70%;
+    }
+
+    .clear-btn{
+        max-width: 30%;
+    }
+}
+
+/* Tablets - CSS Fixed  */
+@media screen and (min-width: 451px) and (max-width: 990px){
+    body{
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,purple,red);
+        background-repeat: no-repeat;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .wrapper{
+        width: 60%;
+        height: fit-content;
+        word-wrap: break-word;
+        display: block;
+    }
+
+    .controls{
+        padding: 12px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .task-box{
+        word-wrap: break-word;
+    }
+}
