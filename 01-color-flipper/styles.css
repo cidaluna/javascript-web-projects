@@ -1,51 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
 }
+
+html,
 body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background: #f4f4f4;
   color: #f9f9d8;
-  line-height: 1.5;
-  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-size: 18px;
+  min-height: 100vh;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
 }
+
 main {
-    min-height: calc(100vh - 3rem);
-    display: grid;
-    place-items: center;
+  width: auto;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h2 {
+  background: #000000;
+  color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 0.55rem;
+  margin-bottom: 1.6rem;
+}
+
+.color {
+  color: red;
+}
+
+.btn-hero {
+  word-wrap: break-word;
+  max-width: 98%;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  background: #a3a3a3;
+  color: green;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: 1s;
+  border: 2px solid purple;
+  cursor: pointer;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  margin: 10px 0px;
+}
+
+.btn-hero:hover {
+  color: white;
+  background: black;
+}
+
+
+/* Smartphones - CSS Fixed */
+@media screen and (max-width: 450px) {
+  body {
+    height: 100%;
+    width: 100vw;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    overflow: auto;
+    background-color: #a3a3a3;
   }
+
+  main,
   .container {
+    width: 90%;
+    margin-top: 10px;
+    height: fit-content;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Tablets - CSS Fixed  */
+@media screen and (min-width: 451px) and (max-width: 990px) {
+  body {
+    height: 100%;
+    width: 100vw;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    background: violet;
+  }
+
+  main,
+  .container {
+    margin-top: 10px;
+    width: 60%;
+    height: fit-content;
+    word-wrap: break-word;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  .container h2 {
-    background: #000000;
-    color: #f1f1f1;
-    padding: 1rem;
-    border-radius: 0.55rem;
-    margin-bottom: 2.5rem;
-  }
-  .color {
-    color: red;
-  }
-  .btn-hero {
-    text-transform: uppercase;
-    background: transparent;
-    color: green;
-    letter-spacing: 0.2rem;
-    display: inline-block;
-    font-weight: 700;
-    transition: 1s;
-    border: 2px solid purple;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    padding: 0.75rem 1.25rem;
-  }
-  .btn-hero:hover {
-    color: white;
-    background: black;
-  }
+}
