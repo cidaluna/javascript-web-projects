@@ -1,23 +1,32 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+html, body {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
     background-color: #E2E8F0;
+    outline: none;
+    min-height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-center{
-    margin: 0 auto;
-    width: 1170px;
-    max-width: 1170px;
+    margin-top: 20px;
+    width: 70%;
+    max-height: 100vh;
     text-align: center;
+    padding: 10px;
 }
 
 .title{
     margin: 2rem auto;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 4px;
     text-transform: capitalize;
     color: green;
@@ -42,6 +51,7 @@ body{
     background-color: green;
     border-radius: 10px;
     padding: 5px;
+    margin: 15px 0px;
     letter-spacing: 1px;
     cursor: pointer;
     box-shadow: 0 1px 13px chocolate;
@@ -51,11 +61,71 @@ body{
     margin-top: 2rem;
 }
 
-.result{
+p.result{
     font-size: 1.2rem;
     line-height: 1.7rem;
+    max-height: 100vh;
+    margin: 1.2rem auto;
 }
 
-p{
-    margin: 1.2rem auto;
+/* Smartphones */
+@media screen and (max-width: 450px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,gray,green);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-center{
+        width: 90%;
+        height: auto;
+        word-wrap: break-word;
+    }
+
+    p.result{
+        margin: 20px 0px;
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
+
+}
+
+/* Tablets  */
+@media screen and (min-width: 451px) and (max-width: 990px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,purple,red);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .section-center{
+        display: block;
+        width: 80%;
+        height: 100%;
+        word-wrap: break-word;
+    }
+
+    p.result{
+        margin: 1.1rem 0rem;
+        font-size: 1.3rem;
+        word-wrap: break-word;
+    }
+
 }
