@@ -123,10 +123,11 @@ button:disabled{
     word-wrap: break-word;
 }
 
-@media(max-width: 450px){
+/* Smartphones */
+@media screen and (max-width: 450px){
     body{
-        height: 100vh;
         width: 100vw;
+        height: 100vh;
         background-image: linear-gradient(200deg,blue,gray,green);
         background-repeat: no-repeat;
         font-family: "Poppins", sans-serif;
@@ -140,10 +141,10 @@ button:disabled{
     }
 
     .container{
-        width: 94%;
-        height: auto;
-        margin: 0 auto;
+        width: 90%;
+        height: fit-content;
         word-wrap: break-word;
+        display: block;
     }
 
     .btn, .buttons, select{
@@ -157,27 +158,27 @@ button:disabled{
 }
 
 /* Tablets */
-@media(min-width: 451px) and (max-width: 990px){
-    body{
-        height: 100vh;
+@media screen and (min-width: 451px) and (max-width: 990px){
+    html, body{
+        height: 100%;
         width: 100vw;
         background-image: linear-gradient(200deg,blue,purple,red);
         background-repeat: no-repeat;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
         outline: none;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow: auto;
     }
 
     .container{
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
+        width: 70%;
+        height: fit-content;
         word-wrap: break-word;
+        display: block;
+        margin-top: 15px;
+        overflow: auto;
     }
 
     .btn, .buttons, select{
