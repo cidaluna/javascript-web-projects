@@ -7,8 +7,11 @@
 }
 
 body{
+    height: 100vh;
+    width: 100vw;
     font-family: "Roboto", sans-serif;
     font-style: normal;
+    overflow: auto;
 }
 
 .wrapper{
@@ -85,7 +88,7 @@ button{
     border-radius: 50%;
 }
 
-
+/* Smartphones */
 @media screen and (max-width: 450px){
     body{
         height: 100vh;
@@ -96,12 +99,16 @@ button{
 
     .wrapper{
         width: 95%;
-        height: auto;
-        margin: 0 auto;
+        height: 100%;
         word-wrap: break-word;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        margin-top: 20px;
     }
 
     button{
@@ -111,6 +118,8 @@ button{
         align-items: center;
         padding: 10px;
         word-wrap: break-word;
+        margin-top: 18px;
+        margin-bottom: 18px;
     }
 }
 
@@ -124,21 +133,27 @@ button{
     }
 
     .wrapper{
-        width: 60%;
-        height: auto;
-        margin: 0 auto;
+        width: 70%;
+        height: 100%;
         word-wrap: break-word;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        margin-top: 20px;
     }
 
     button{
-        max-width: 40%;
+        max-width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
         word-wrap: break-word;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
