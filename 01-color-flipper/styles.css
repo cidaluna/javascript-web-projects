@@ -90,7 +90,6 @@ main {
     justify-content: center;
     word-wrap: break-word;
     overflow: auto;
-    background-color: #a3a3a3;
   }
 
   main,
@@ -117,7 +116,6 @@ main {
     align-items: center;
     justify-content: center;
     overflow: auto;
-    background: violet;
   }
 
   main,
