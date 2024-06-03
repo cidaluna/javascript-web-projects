@@ -26,21 +26,25 @@ body {
 
 .container {
     width: 550px;
-    background-color: #fff;
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);*/
     word-wrap: break-word;
 }
 
 li {
     list-style: none;
     padding: 12px 20px;
-    border-radius: 30px;
+    border-radius: 10em;
     border: 2px solid black;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     cursor: pointer;
+}
+
+li:hover{
+    transition: cubic-bezier(0.075, 1.41, 0.82, 1.41) 0.2s;
+    transform: scale(1.05);
+    font-weight: 500;
 }
 
 a{
@@ -86,6 +90,23 @@ li.five {
     background-color: #FEC997;
 }
 
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-user{
+    margin: 10px 0px;
+    max-width: 50%;
+    border-radius: 50%;
+} 
+
+h2, h4{
+    color: black;
+}
 
 /* Smartphones */
 @media screen and (max-width: 450px){
@@ -110,6 +131,7 @@ li.five {
         height: fit-content;
         word-wrap: break-word;
         display: block;
+        overflow: auto;
     }
 
     a {
