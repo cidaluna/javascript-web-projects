@@ -34,6 +34,8 @@ Item |  Description                                                             
 29|  [JS - Text to Speech](https://cidaluna.github.io/javascript-web-projects/29-text-to-speech/)                                                                   | ✅
 30|  [JS - Take Screenshot](https://cidaluna.github.io/javascript-web-projects/30-take-screenshot/)                                                                   | ✅
 31|  [JS - Linktree Clone](https://cidaluna.github.io/javascript-web-projects/31-linktree-clone/)                                                                   | ✅
+32|  [JS - Text Editor](https://cidaluna.github.io/javascript-web-projects/32-text-editor/)      |  🔵  
+
 
 
 ___

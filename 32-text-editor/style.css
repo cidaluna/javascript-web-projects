@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(200deg,pink,purple, blue);
+    background-repeat: no-repeat;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    width: 450px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.2);
+}
+
+
+/* Smartphones */
+@media screen and (max-width: 450px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(200deg,blue,gray,green);
+        background-repeat: no-repeat;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 90%;
+        height: fit-content;
+        word-wrap: break-word;
+        display: block;
+    }
+
+}
+
+/* Tablets */
+@media screen and (min-width: 451px) and (max-width: 990px){
+    html, body{
+        height: 100%;
+        width: 100vw;
+        background-image: linear-gradient(200deg,blue,purple,red);
+        background-repeat: no-repeat;
+        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .container{
+        width: 70%;
+        height: fit-content;
+        word-wrap: break-word;
+        display: block;
+        margin-top: 15px;
+        overflow: auto;
+    }
+
+}
