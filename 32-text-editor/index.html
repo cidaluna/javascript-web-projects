@@ -48,7 +48,27 @@
             <button id="link" class="option-button format">
                 <i class="fa-solid fa-align-right"></i>
             </button>
+            <select id="formatBlock" class="adv-options-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+            </select>
+            <select id="formatFontName" class="adv-options-button"></select>
+            <select id="formatFontSize" class="adv-options-button"></select>
+
+            <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-options-button">
+                <label for="foreColor">Font Color</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-options-button">
+                <label for="backColor">Background Color</label>
+            </div>
         </div>
+        <div id="text-input" contenteditable="true"></div>
     </div>
     
     <script src="script.js"></script>
