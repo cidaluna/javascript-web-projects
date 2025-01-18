@@ -35,6 +35,8 @@ Item |  Description                                                             
 30|  [JS - Take Screenshot](https://cidaluna.github.io/javascript-web-projects/30-take-screenshot/)                                                                   | ✅
 31|  [JS - Linktree Clone](https://cidaluna.github.io/javascript-web-projects/31-linktree-clone/)                                                                   | ✅
 32|  [JS - Text Editor](https://cidaluna.github.io/javascript-web-projects/32-text-editor/)      |  🔵  
+33|  [JS - Secret Number Game](https://cidaluna.github.io/javascript-web-projects/33-secret-number-game/)      |  🔵  
+
 
 
 
