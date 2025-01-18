@@ -1,5 +1,6 @@
 alert('Boas vindas ao Jogo do Número Secreto');
-let secretNumber = 29;
+let maxNumber = 10;
+let secretNumber = parseInt(Math.random() * maxNumber + 1); // De 0 à 9 (+1) temos de 0 à 10
 let attempt = 1; // número de tentativas
 let userNumber;
 
@@ -10,10 +11,12 @@ console.log(typeof userNumber);
 
 // enquanto o número do usuário nao for igual ao número secreto, exiba a pergunta
 while (userNumber != secretNumber){
-  userNumber = parseInt(prompt('Escolha um número entre 1 e 30? '));
+  userNumber = parseInt(prompt(`Escolha um número entre 1 e ${maxNumber}?`));
+
+  wordAttempt = attempt > 1 ? 'tentativas' : 'tentativa';
 
   if (secretNumber === userNumber) {
-    alert(`Parabéns! Você acertou o número secreto, com ${attempt} tentativa(s).`);
+    alert(`Parabéns! Você acertou o número secreto, com ${attempt} ${wordAttempt}.`);
   } else {
     if (secretNumber > userNumber) {
       alert(`O número secreto é maior do que o que você digitou (${userNumber}). Tente novamente!`);
